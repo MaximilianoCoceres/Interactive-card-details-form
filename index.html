@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap" rel="stylesheet">
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <div class="cards-container">
+          <div class="card-front">
+            <div class="card-icons">
+              <span></span>
+              <span></span>
+            </div>
+            <div class="card-infomation">
+              <div class="number-card">
+                <p id="number-card">0000 0000 0000 0000</p>
+              </div>
+              <div class="info-card">
+                <p class="name">felicia leire</p>
+                <p class="date">00/00</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-back">
+         
+
+              <div class="card-barra">
+              </div>
+            
+            <div class="card-info-cvv">
+              <div class="card-cvv">
+                <p id="number-cvv">000</p>
+              </div>
+              <div class="info-card">
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form">
+        <form action="">
+          <label for="">Cardholder Name</label>
+          <input type="text" placeholder="e.g. Jane Appleseed">
+          <label for="">Card Number</label>
+          <input type="text" placeholder="e.g. 1234 5678 9123 0000">
+          <div class="form-down">
+            <div class="fecha">
+              <label for="">Exp. Date (MM/YY)</label>
+              <div class="date-input">
+
+                <input type="number" min="01" max="12" placeholder="MM">
+                <input type="number" min="00" max="99"  placeholder="YY">
+              </div>
+            </div>
+            <div class="cvc">
+              <label for="">CVC</label>
+              <input type="number" placeholder=" e.g. 123">
+            </div>
+          </div>
+          <button type="submit">Confirm</button>
+        </form>
+
+
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,268 @@
+
+html,
+body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.card{
+   background: url("./images/bg-main-desktop.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+padding: 1em;
+display: flex;
+justify-content: center;
+}
+
+
+.cards-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.card .card-front{
+    background: url("./images/bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    border-radius: .4em;
+    padding: 1em 0;
+    max-width: 300px;
+    z-index: 4;
+    position: relative;
+    margin-bottom: 2em;
+    transform: translate(-3em );
+   
+   
+    
+
+
+}
+.card-infomation{
+    padding: 0 1em;
+}
+
+
+.card-icons{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3em;
+    flex-grow: 2;
+    padding: 0 1em;
+}
+
+.card-icons span{
+    border-radius: 100%;
+    
+
+}
+
+.card-icons span:nth-child(1){
+    width: 1.8em;
+    height: 1.8em;
+    background-color: #fff;
+}
+
+.card-icons span:nth-child(2){
+    width: 0.5em;
+    height: 0.5em;
+    border: 1px solid #fff;
+    margin-left: 0.5em;
+}
+
+.number-card{
+    width: 80%;
+}
+
+
+#number-card{
+    color:hsl(0, 0%, 100%);
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.name, 
+.date{
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+
+.card .info-card{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+
+
+/* card back */
+
+ .card-back{
+    border-radius: .4em;
+    width: 100%;
+    padding: 1em 0;
+    background-color: hsl(270, 3%, 87%);
+    max-width: 300px;
+   
+}
+
+
+
+.card-barra{
+    background-color: black;
+    width: 100%;
+    height: 2.4em;
+}
+
+.card-info-cvv{
+    padding: 1em;
+}
+
+.card-cvv{
+    background-color: hsl(279, 6%, 55%);
+    padding: 0.3em;
+    display: flex;
+    justify-content: end;
+}
+
+.card-cvv p{
+    margin: 0;
+}
+
+.info-card{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.info-card span{
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+
+.form{
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4em;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label{
+    color: hsl(278, 68%, 11%);
+    text-transform: uppercase;
+    font-size: .9em;
+    margin-top: 2em;
+}
+
+form input{
+    padding: 1em;
+    border-radius: .4em;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 5px black;
+}
+
+
+.form-down{
+    display: flex;
+    margin-top: 2em;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.fecha{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.cvc{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+
+button{
+    margin-top: 2em;
+    padding: .5em;
+    background-color: hsl(278, 68%, 11%);
+    color: #fff;
+    border-radius: .4em;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+
+@media screen and (min-width:768px) {
+
+    main{
+        width: 100%;
+        display: flex;
+        height: 100vh;
+    }
+
+    .card{
+
+        flex-direction: column;
+        
+    }
+    .form{
+        width: 70%;
+    }
+
+    .cards-container{
+        width: 100%;
+        transform: translate(10em);
+        
+    }
+
+
+
+
+   .form form{
+    width: 40%;
+   } 
+}
+
+@media screen and (max-width:768px) {
+    .card .card-front{
+        transform: translate(-0.4em, 15em);
+    }
+
+    .card .card-back{
+        transform: translate(0.5em, -5em);
+    }
+
+    .cards-container{
+        margin-bottom: -2em;
+        margin-top: -5em;
+        
+    }
+}
